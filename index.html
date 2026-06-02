@@ -105,6 +105,26 @@
         <p>A self-directed study comparing <strong>SVM, CNN, and GCN</strong> architectures for automated genre labeling. Conducted through independent research to explore graph-based models in audio. <br>
         <a href="Music Genre Classification.pdf" target="_blank">[Read Paper]</a></p>
     </div>
+    
+    <div class="project-update" style="margin-top: 20px; padding: 15px; background-color: #f8f9fa; border-left: 4px solid #007bff; border-radius: 4px;">
+        <h4 style="margin-top: 0; color: #333;">📊 Latest Diagnostic Expansion (June 2026)</h4>
+        <p style="font-size: 0.95rem; color: #555; line-height: 1.5;">
+            Expanded the study into a pure multivariate statistical diagnosis using a sanitized 999-track subset of the GTZAN corpus. Programmatically isolated and removed corrupted data streams, then evaluated 48-dimensional MFCC vectors (temporal mean and variance) using structural covariance metrics.
+        </p>
+        
+        <h5 style="margin-bottom: 5px; color: #444;">Key Empirical Metrics:</h5>
+        <ul style="padding-left: 20px; margin-top: 5px; font-size: 0.9rem; color: #555;">
+            <li><b>Maximum Acoustic Ambiguity:</b> Disco vs. Rock achieved the lowest Mahalanobis distance (D_M = 1.37).</li>
+            <li><b>Production Confounding:</b> Hip-Hop vs. Reggae clustered closely (D_M = 1.56) due to shared sub-bass weights.</li>
+            <li><b>Linear Separation Deficit:</b> LDA mapping confirmed complete spatial intermingling between Rock, Hip-Hop, and Reggae.</li>
+        </ul>
+    
+        <h5 style="margin-bottom: 5px; color: #444;">🔮 Scheduled Next Step (This Friday):</h5>
+        <p style="margin-top: 5px; font-size: 0.9rem; color: #666; font-style: italic;">
+            Implementing a temporal feature fusion pipeline using <code>librosa.feature.tempogram</code>. This will extract local onset strength autocorrelation metrics to inject rhythmic and pulse structures into the feature array, aimed at breaking the linear non-separability of the timbral overlapping zones.
+        </p>
+    </div>
+
 
     <div class="project-item">
         <strong>Music Analysis Study</strong> <span class="tag">Signal Processing</span> <span class="tag">MAESTRO Dataset</span>
